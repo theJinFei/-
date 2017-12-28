@@ -1,0 +1,17 @@
+1：matlab clc清空命令行
+2：matlab 格式化输入输出 
+	//输入
+	x=input('please input a string:','s')
+	please input a string:this is a string
+	x = this is a string
+	//输出（包括自由格式(disp)和格式化输出(fprintf)两种）
+	disp(23+454-29*4)
+	361
+	
+	disp('this is a string')
+	this is a string
+	
+	printf('The area is %8.5f\n',area)
+	The area is 12.56638
+3：为什么在伽罗华域中 就会出现 想删除矩阵的某行 告诉不匹配呢？
+4：某个元素的代数余子式 ：  去掉该行和该列，是余子式，前面乘以 -1^（i + j）即为代数余子式（是一个矩阵）
