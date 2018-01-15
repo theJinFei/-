@@ -1,0 +1,16 @@
+1：图表要符合，删除一张图的时候，记得把下边的图表的序号给改了，引用什么的，要都给改了
+2：内容要完整，参考文献要。。记得写全（别让老师帮你写
+3：看了一点makefile的编写规则，运行的时候，直接用make命令即可，会自动查找makefile文件
+	bchcode : BCHCode.o main.o
+		g++ BCHCode.o main.o -o bchcode
+	BCHCode.o:BCHCode.cpp BCHCode.h
+		g++ -c -std=c++11 BCHCode.cpp -o BCHCode.o
+	main.o:main.cpp
+		g++ -c -std=c++11 main.cpp -o main.o
+	clean:
+	rm -rf *.o bchcode
+4：实验室好像服务器很快。。。用我自己的电脑，不知道运行到啥时候呢，然后。。用实验室的，几秒钟就出来了。。。大力出奇迹
+5：看了ProxyChecker，可以实现免费上网？
+
+	
+	
