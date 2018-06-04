@@ -1,0 +1,9 @@
+1：完成了蒙特卡罗的界面设计，具体的用到了几个点：
+	I:首先学了一点python的GUI编程，了解了一些语法
+	II：最重要的，是将ptyhon连接到C语言的相关函数，
+	具体过程为，首先将.c文件编译成.o文件，这一点用gcc编译即可（但是由于自己使用了gsl科学库，在编译的时候需要加一些选项设置
+	gcc -c -fPIC -g -W -I ~/gsl/include -c monte.c
+	然后将.o文件进行链接 完成.so的过程（Linux动态链接库的文件）
+	gcc -shared -fPIC -L ~/gsl/lib -o libmonte.so monte.o -lgsl -lgslcblas -lm
+2：按照老师的要求，做了相关的实验部分，但感觉实验效果仍然不是太好。主要是用SSE进行优化和不用SSE进行优化的效果相差不是太大。
+	
